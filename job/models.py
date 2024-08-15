@@ -39,4 +39,13 @@ class Category(models.Model):
         return self.name
         
     
+
+class Apply(models.Model):
+    job=models.ForeignKey(Job,on_delete=models.CASCADE)
+    name=models.CharField(max_length=50)
+    email=models.EmailField(max_length=100)
+    website=models.URLField(max_length=100)
+    cv=models.FileField(upload_to='applyjob/')
+    coverletter=models.TextField(max_length=500)
+    created_at=models.DateTimeField(auto_now=True)
     
