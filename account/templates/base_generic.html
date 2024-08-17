@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% load bootstrap5form %}
+
 
 {% block body %}
 
@@ -7,15 +7,7 @@
 
 <!-- bradcam_area  -->
 <div class="bradcam_area bradcam_bg_1">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="bradcam_text">
-                    <h3>Post A Job</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </div>
 <!--/ bradcam_area  -->
 
@@ -33,15 +25,10 @@
                     </div>
                 </div>
              
-                    <form method="post" enctype='multipart/form-data'>
-                        <legend>Post New Job</legend>
-                        {% csrf_token %}
-                        {{ form|bootstrap5form }}
-                        <div class="form-group">
-                            <button type="submit" class="boxed-btn3 w-100">Post</button>
-                        </div>
-                    </form>
-
+                 
+                 {% block content %}
+                 {% endblock content %}
+                    
 
 
 
@@ -53,4 +40,3 @@
 </div>
 
 {% endblock body %}
- 
