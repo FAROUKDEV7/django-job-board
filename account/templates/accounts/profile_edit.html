@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load bootstrap5form %}
+
+{% block body %}
+
+
+
+<!-- bradcam_area  -->
+<div class="bradcam_area bradcam_bg_1">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ bradcam_area  -->
+
+<div class="job_details_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+  
+                               
+                           
+  
+                    </div>
+                </div>
+             
+                    <form method="post" enctype='multipart/form-data'>
+                        {% csrf_token %}
+                        {{ userform|bootstrap5form }}
+                        {{ profileform|bootstrap5form }}
+                        <div class="form-group">
+                            <button type="submit" class="boxed-btn3 w-100">save</button>
+                        </div>
+                    </form>
+
+
+
+
+                </div>
+
+            
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+ 
