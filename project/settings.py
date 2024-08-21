@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'job.apps.JobConfig',
     'contact.apps.ContactConfig',
+    'django_filters',
 
     # bootstrap
     'bootstrap5form',
