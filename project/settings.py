@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'django_filters',
     'rest_framework',
+    'homepage.apps.HomepageConfig',
+    
 
     # bootstrap
     'bootstrap5form',
